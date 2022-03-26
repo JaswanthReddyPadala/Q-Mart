@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn | QMart</title>
+    <link rel="stylesheet" href="https://quik-ui.netlify.app/style.css" />
+    <link rel="stylesheet" href="../qmart.css" />
+</head>
+
+<body>
+    <!-- NAVBAR starts -->
+    <nav class="flex justify-content-between align-items-center pt-1 pb-1 q-nav">
+        <div class="q-logo">
+          <a href="../index.html">
+            <h1 class="text-36">QMart</h1></a>  
+        </div>
+  
+        <div class="q-search-container p-relative flex align-items-center">
+            <span class="text-16 p-absolute"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="input text-16" placeholder="Search" />
+        </div>
+  
+        <div class="q-nav-options flex align-items-center">
+            <button class="button button-filled-default q-nav-login text-16">
+                <a href="./login.html">
+                Login</a>
+            </button>
+            <div class="badge badge-icon-container">
+              <a href="./whishlist.html">
+                <i class="fa-solid fa-heart"></i></a>
+                <span class="badge-icon text-center">3</span>
+            </div>
+            <div class="badge badge-icon-container">
+              <a href="./cart.html">
+                <i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="badge-icon">7</span>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR ends -->
+
+    <main class="q-main-container flex">
+        <!-- PRODUCT FILTERS STARTS HERE -->
+        <aside class="q-product-filters-container">
+            <div class="q-filters-container_head flex justify-content-between align-items-center mb-2">
+                <h2 class="text-18">Filters</h2>
+                <p class="text-underline text-12">Clear</p>
+            </div>
+
+            <div class="q-product-filter-item">
+                <h1 class="text-18">Price</h1>
+                <div class="q-product-filter">
+                    <div class="q-price-range flex justify-content-between mt-1">
+                        <p class="text-gray">50</p>
+                        <p class="text-gray">150</p>
+                        <p class="text-gray">200</p>
+                    </div>
+                    <div class="q-price-slider">
+                        <input type="range" min="50" max="200" value="125" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="q-product-filter-item mt-2">
+                <h1 class="text-18">Catergory</h1>
+                <div class="q-product-filter">
+                    <div class="checkbox-input-container flex">
+                        <label for="men" class="checkbox-input">
+                            <input type="checkbox" name="checkbox" id="men" class="checkbox-input" />
+                            <span>Men</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-input-container flex">
+                        <label for="women" class="checkbox-input">
+                            <input type="checkbox" name="checkbox" id="women" class="checkbox-input" />
+                            <span>Women</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="q-product-filter-item mt-2">
+                <h1 class="text-18">Rating</h1>
+                <div class="q-product-filter">
+                    <div class="checkbox-input-container flex flex-col">
+                        <label for="4-above" class="radio-input">
+                            <input type="radio" class="input-radio element-round" id="4-above" name="rating" />
+
+                            <span>4 & above</span>
+                        </label>
+                        <label for="3-above" class="radio-input">
+                            <input type="radio" class="input-radio element-round" id="3-above" name="rating" />
+                            <span>3 & above</span>
+                        </label>
+                        <label for="2-above" class="radio-input">
+                            <input type="radio" class="input-radio element-round" id="2-above" name="rating" />
+                            <span>2 & above</span>
+                        </label>
+                        <label for="1-above" class="radio-input">
+                            <input type="radio" class="input-radio element-round" id="1-above" name="rating" />
+                            <span>1 & above</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="q-product-filter-item mt-2">
+                <h1 class="text-18">Sort by</h1>
+                <div class="q-product-filter">
+                    <div class="checkbox-input-container flex flex-col">
+                        <label for="high-to-low" class="radio-input">
+                            <input type="radio" class="input-radio element-round" id="high-to-low" name="sort-by" />
+
+                            <span>high to low</span>
+                        </label>
+                        <label for="low-to-high" class="radio-input">
+                            <input type="radio" class="input-radio element-round" id="low-to-high" name="sort-by" />
+                            <span>low to high</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- PRODUCT FILTERS ENDS HERE -->
+
+        <section class="q-products-view-container">
+            <div class="q-products-view-head flex align-items-baseline">
+                <h1 class="mb-2 text-18">Showing All Products</h1>
+                <span class="text-gray text-12 ml-1">(showing 11 products)</span>
+            </div>
+
+            <div class="q-products-view-main grid">
+                <!-- P-1 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-badge card-trending">
+                        <p>Trending</p>
+                    </div>
+
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+
+                    <div class="card-img-container">
+                        <img src="../assets/products/1.webp" alt="ejs-book" />
+                    </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">WROGN</h1>
+                        <p class="card-description">Men Black Solid Jacket</p>
+                        <p class="card-price">
+                            Rs. 2419 <span class="card-offer-price">Rs. 4399</span>
+                        </p>
+                        <p class="card-offer">45%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-2 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-img-container">
+                        <img src="../assets/products/2.webp" alt="ejs-book" />
+                    </div>
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">Calvin Klein</h1>
+                        <p class="card-description">Men Embelliished Sweatshirt</p>
+                        <p class="card-price">
+                            Rs. 879 <span class="card-offer-price">Rs. 2199</span>
+                        </p>
+                        <p class="card-offer">60%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-3 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-img-container">
+                        <img src="../assets/products/3.webp" alt="ejs-book" />
+                    </div>
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">HRX by Hrithik Roshan</h1>
+                        <p class="card-description">Ultralyte Men Running T-shirt</p>
+                        <p class="card-price">
+                            Rs. 449 <span class="card-offer-price">Rs. 899</span>
+                        </p>
+                        <p class="card-offer">50%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-4 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-img-container">
+                        <img src="../assets/products/4.webp" alt="ejs-book" />
+                    </div>
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">Roadster</h1>
+                        <p class="card-description">Cotton Printed Detail T-shirt</p>
+                        <p class="card-price">
+                            Rs.349 <span class="card-offer-price">Rs. 699</span>
+                        </p>
+                        <p class="card-offer">50%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-5 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-img-container">
+                        <img src="../assets/products/5.webp" alt="ejs-book" />
+                    </div>
+
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">ether</h1>
+                        <p class="card-description">Men Regular Fit Casual Shirt</p>
+                        <p class="card-price">
+                            Rs. 699 <span class="card-offer-price">Rs. 1399</span>
+                        </p>
+                        <p class="card-offer">50%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-6 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-badge card-trending">
+                        <p>Trending</p>
+                    </div>
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+
+                    <div class="card-img-container">
+                        <img src="../assets/products/6.webp" alt="ejs-book" />
+                    </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">Mast & Harbour</h1>
+                        <p class="card-description">Women Solid Track Pants</p>
+                        <p class="card-price">
+                            Rs. 679 <span class="card-offer-price">Rs. 1699</span>
+                        </p>
+                        <p class="card-offer">65%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-7 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-badge card-trending">
+                        <p>Trending</p>
+                    </div>
+
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+
+                    <div class="card-img-container">
+                        <img src="../assets/products/7.webp" alt="ejs-book" />
+                    </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">Roadster</h1>
+                        <p class="card-description">Faux Fur Trim Tailored Jacket</p>
+                        <p class="card-price">
+                            Rs. 1749 <span class="card-offer-price">Rs. 4999</span>
+                        </p>
+                        <p class="card-offer">65%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-8 -->
+                <div class="card card-vertical mr-1 mb-1">
+
+                    <div class="card-overlay"></div>
+                    <div class="card-badge card-out-of-stock">
+                        <p>Out of Stock</p>
+                    </div>
+
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+
+                    <div class="card-img-container">
+                        <img src="../assets/products/8.webp" alt="ejs-book" />
+                    </div>
+
+                    <div class="card-content">
+                        <h1 class="card-title">Mast & Harbour</h1>
+                        <p class="card-description">Printed Round Neck T-shirt</p>
+                        <p class="card-price">
+                            Rs. 359 <span class="card-offer-price">Rs. 799</span>
+                        </p>
+                        <p class="card-offer">55%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+                <!-- P-9 -->
+                <div class="card card-vertical mr-1 mb-1">
+                    <div class="card-img-container">
+                        <img src="../assets/products/9.webp" alt="ejs-book" />
+                    </div>
+
+                    <div class="wishlist-icon p-absolute flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      
+                    <div class="card-content">
+                        <h1 class="card-title">Indo Era</h1>
+                        <p class="card-description">Muted Haelnut Kurta Set</p>
+                        <p class="card-price">
+                            Rs. 809 <span class="card-offer-price">Rs. 2999</span>
+                        </p>
+                        <p class="card-offer">73%</p>
+                    </div>
+
+                    <button class="card-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/d07b5a219c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
