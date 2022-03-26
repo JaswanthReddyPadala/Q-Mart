@@ -3,6 +3,7 @@
 @import url(./styles/home.css);
 @import url(./styles/products.css);
 @import url(./styles/login.css);
+@import url(./styles/cart.css);
 
 *,
 *::after,

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whishlist | QMart</title>
+    <link rel="stylesheet" href="https://quik-ui.netlify.app/style.css" />
+    <link rel="stylesheet" href="../qmart.css" />
+    <script src="https://kit.fontawesome.com/d07b5a219c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR starts -->
+    <nav class="flex justify-content-between align-items-center pt-1 pb-1 q-nav">
+        <div class="q-logo">
+          <a href="../index.html">
+            <h1 class="text-36">QMart</h1></a>  
+        </div>
+  
+        <div class="q-search-container p-relative flex align-items-center">
+            <span class="text-16 p-absolute"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="input text-16" placeholder="Search" />
+        </div>
+  
+        <div class="q-nav-options flex align-items-center">
+            <button class="button button-filled-default q-nav-login text-16">
+                <a href="./login.html">
+                Login</a>
+            </button>
+            <div class="badge badge-icon-container">
+              <a href="./whishlist.html">
+                <i class="fa-solid fa-heart"></i></a>
+                <span class="badge-icon text-center">3</span>
+            </div>
+            <div class="badge badge-icon-container">
+              <a href="./cart.html">
+                <i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="badge-icon">7</span>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR ends -->
+
+    <main class="q-main-container">
+        <div class="q-cart-container pt-2">
+            <h1 class="text-center text-24">MY CART (2)</h1>
+
+            <div class="q-cart-main flex justify-content-between align-items-start">
+                <div class="q-cart-items-container flex flex-wrap p-1">
+                    <div class="card card-horizontal mr-2 mb-1">
+                        <div class="card-img-container">
+                            <img src="../assets/products/1.webp" alt="ejs-book" />
+                        </div>
+
+                        <div class="card-content">
+                            <div class="card-content-top">
+                                <h1 class="card-title">WROGN</h1>
+                                <p class="card-description">Men Black Solid Jacket</p>
+                                <p class="card-price">
+                                    Rs. 2419 <span class="card-offer-price">Rs. 4399</span>
+                                </p>
+                                <p class="card-offer">45%</p>
+                            </div>
+                            <button class="card-btn">Remove from cart</button>
+                            <button class="card-btn">Move to Wishlist</button>
+                        </div>
+                    </div>
+
+                    <div class="card card-horizontal mr-2 mb-1">
+                        <div class="card-img-container">
+                            <img src="../assets/products/9.webp" alt="ejs-book" />
+                        </div>
+
+                        <div class="card-content">
+                            <div class="card-content-top">
+                                <h1 class="card-title">Indo Era</h1>
+                                <p class="card-description">Muted Haelnut Kurta Set</p>
+                                <p class="card-price">
+                                    Rs. 809 <span class="card-offer-price">Rs. 2999</span>
+                                </p>
+                                <p class="card-offer">73%</p>
+                            </div>
+                            <button class="card-btn">Remove from cart</button>
+                            <button class="card-btn">Move to Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="q-cart-total-container">
+                    <h1 class="text-24">PRICE DETAILS</h1>
+                    <hr />
+                    <div class="q-cart-details">
+                        <div class="q-cart-detail-items flex justify-content-between">
+                            <p class="text-14">Total Price</p>
+                            <p class="text-14">Rs. 4999</p>
+                        </div>
+                        <div class="q-cart-detail-items flex justify-content-between">
+                            <p class="text-14">Discount</p>
+                            <p class="text-14">- Rs. 120</p>
+                        </div>
+                        <div class="q-cart-detail-items flex justify-content-between">
+                            <p class="text-14">Delivery Charges</p>
+                            <p class="text-14">Rs. 129</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="q-cart-total-details flex justify-content-between">
+                        <p class="text-14">FINAL AMOUNT</p>
+                        <p class="text-14">Rs. 2943</p>
+                    </div>
+                    <hr />
+                    <button class="q-cart-btn button button-filled-default">
+                        Proceed to Payment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/d07b5a219c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
