@@ -1,0 +1,32 @@
+.q-wishlist-container{
+  height: 100%;
+}
+
+.q-wishlist-items-container {
+    margin: 2.5% 7.5%;
+  }
+
+  .q-wishlist-items-container .card{
+    background-color: var(--white);
+  }
+
+  @media screen and (max-width: 988px) {
+    .q-wishlist-items-container {
+        margin: 2.5%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem ;
+      }
+    
+  }
+
+
+  @media screen and (max-width: 540px) {
+    .q-wishlist-items-container  {
+        margin: 2.5% auto;
+        
+      }
+
+
+
+}
