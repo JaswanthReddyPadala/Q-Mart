@@ -1,0 +1,53 @@
+/*LOGIN PAGE CSS */
+.q-login-main {
+    background-color: var(--white);
+    padding: var(--spacing-2) var(--spacing-1);
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    width: 25%;
+    height: 100%;
+  }
+  
+  .q-login-input-container p {
+    color: var(--secondary-light);
+  }
+  
+  .q-login-input-container .input {
+    margin-top: 0.25rem;
+    width: 100%;
+  }
+  
+  .q-login-options label,
+  .q-login-options label input {
+    margin: 0;
+    margin-right: 0.25rem;
+  }
+  
+  #forgot-password {
+    color: var(--blue);
+  }
+  
+  .q-login-buttons .button-filled-primary {
+    width: 100%;
+    background-color: var(--secondary-color);
+  }
+  
+  .q-login-buttons .button-outline-primary {
+    border-color: var(--secondary-color);
+    width: 100%;
+    color: var(--secondary-color);
+  }
+
+
+  @media screen and (max-width: 988px) {
+    .q-login-main {
+      width: 50%;
+    }
+  }
+
+
+  @media screen and (max-width: 540px) {
+    .q-login-main {
+        width: 100%;
+      }
+}
