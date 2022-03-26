@@ -1,6 +1,7 @@
 @import url(https://quik-ui.netlify.app/style.css);
 
 @import url(./styles/home.css);
+@import url(./styles/products.css);
 
 *,
 *::after,
@@ -17,6 +18,16 @@
   --secondary-color: #ff3b3b;
   --secondary-light: hsla(0, 100%, 62%, 0.8);
   --blue: #0a66c2;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
 }
 
 .q-main-container {
@@ -49,7 +60,7 @@
   border-color: var(--primary);
 }
 
-.q-nav-options > *:not(:nth-child(1)) {
+.q-nav-options > * {
   margin-left: var(--spacing-2);
 }
 
@@ -75,10 +86,20 @@
   background-color: var(--secondary-color);
 }
 
+.q-cart-container, .q-wishlist-container, .q-login-container{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+
 @media screen and (max-width: 988px) {
+
+
   .q-search-container {
     display: none;
   }
+
+ 
 }
 
 @media screen and (max-width: 540px) {
@@ -87,7 +108,11 @@
   }
 
   .q-logo {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
+  }
+
+  .q-nav-options > * {
+    margin-left: var(--spacing-1);
   }
 
   .q-nav-options .badge-icon-container {
